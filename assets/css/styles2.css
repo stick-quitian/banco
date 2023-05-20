@@ -1,0 +1,460 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+:root{
+    
+    --texto-color: #000000;
+    --background-color: #e3dddd;
+    --background-color-cuadros: #ffffff;
+    --banner-color1:#ecbd0b;
+    --color-rojo: #ec101a;
+    --color-gris: #323c4c;
+
+
+}
+/* --------NAV BAR---------------------------------- */
+.navbar_madre, .container_block, .container_doc, .footer, .footer-top, .footer-bottom,.container_foot1, .container_foot2{
+    display: grid;
+}
+
+.navbar_hija1, .navbar_hija2, .elemetos_navbar, .btn_navbar,.texto_navbar2, .modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+}
+
+.ico_gif{
+    width: 50px;
+}
+
+.logo_nav{
+    width: 68px;
+    border: #ecbd0b 1px solid;
+    border-radius: 6px;
+    background-color: #323c4c;
+    padding: 5px;
+    margin: 3px 20px 0 2%;
+}
+
+.navbar_madre{
+    background-color: #ffffff;
+    width: 100%;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    position: fixed;
+    overflow-x: hidden;
+    z-index: 1;
+    margin-top: -10px;
+}
+
+/* navbar hija 1 */
+.navbar_hija1{
+    justify-content: left;
+    padding: 5px;
+}
+
+.elementos_navbar{
+    margin: 0 20px 0 0;
+
+}
+.ico_gif{
+    margin: 0 0 0 40px;
+}
+
+.texto_navbar{
+    color: #ecbd0b;
+    font-size: 20px;
+}
+
+/* navbar hija2 */
+.btn_navbar{
+    margin-left: 20px;
+}
+.btn_navbar a   {
+    background-color: none;
+    color: #ecbd0b;
+}
+.ico_ingresar{
+    width: 25px;
+    margin: 0 10px;
+
+}
+.texto_navbar2{
+    color: #ecbd0b;
+    margin: 0 30px;
+}
+
+.texto_navbar3{
+    color: #ece80b;
+    font-weight: bold;
+    margin: 0 0 20px 0 ;
+}
+
+.btn_navbar{
+    width: 160px;
+    height: 50px;
+    background-color: #ec101a;
+    color:beige;
+    border: 1px solid;
+    border-color: #ecbd0b;
+    border-radius: 7px;
+    font-size: 20px;
+}
+
+/* --------------------BANNER--------------------------- */
+.banner-tarjeta{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: var(--banner-color1);
+    font-size: 4rem;
+    color: var(--background-color-cuadros);
+    background-image: url("../img/bitCoinBanner.jpeg");
+    padding-top: 60px;
+}
+
+@media (max-width:992px){
+    .banner-tarjeta{
+        display: flex;
+        flex-direction: column-reverse;
+        font-size: 1.5rem;
+    }
+    .banner-tarjeta
+    img{
+        height: 200px;
+    }
+}
+
+
+
+
+
+.banner-izquierdo{
+    display: grid;
+    padding: 30px;
+    text-align: center;
+    text-justify: center;
+}
+
+.banner-tarjeta
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.solicitar{
+    width: 200px;
+    height: 50px;
+    justify-self: center;
+    background-color: var(--texto-color);
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: var(--banner-color1);
+    border: 2px var(--color-rojo) solid;
+}
+
+.solicitar:hover{
+    background-color: var(--banner-color1);
+    color: var(--texto-color);
+    transition: 0.8s;
+}
+
+.p-banner1{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 1.5rem;
+}
+
+.titulo1 h2 {
+    margin-bottom: 10px;
+}
+
+.parrafo1 p{
+    margin-top: 10px;
+}
+
+.tarjetas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 60px;
+    row-gap: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+@media(max-width:992px){
+    .tarjetas{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+.tarjetas img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.tarjetas article{
+    border:none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px -3px #968E8F;
+}
+
+.titulo-tarjeta{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.tarj-ventajas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+    padding: 10px;
+}
+
+.parrafo-ventajas{
+    padding: 20px;
+    margin: 0;
+}
+
+.tarj-ventajas p{
+    color: var(--texto-color);
+    background-color: var(--bitcoin-color);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.info-tarjeta{
+    padding: 40px;
+}
+
+.agregado{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    justify-content: space-around;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+@media(max-width: 992px){
+    .agregado{
+    grid-template-columns: repeat(1, 1fr);
+    } 
+}
+
+.agregado
+img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.titulo-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    font-size: 2rem;
+}
+.t-footer{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    color: var(--banner-color1);
+}
+
+.p-footer{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.banner-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--banner-color1);
+    margin-bottom: 0px;
+    height: 230px;
+    background-image: url(../img/bitCoinBanner.jpeg);
+    
+}
+
+.titulo-ban-footer h3{
+    font-size: 2rem;
+    color: var(--background-color-cuadros);
+}
+
+.tarjetas article :nth-child(1), .boton-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ---------------MODAL------------------------------ */
+a {
+    text-decoration: none;
+}
+
+.modal{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(77, 77, 77, .6);
+    position: fixed;
+
+}
+
+.modal_content{
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: 1fr 2fr;
+    background-color: #ffffff;
+    padding: 1.5em 2em;
+    width: 800px;
+    max-width: 80%;
+    border-radius: 16px;
+    border: 2px solid;
+    border-color: #ecbd0b;
+    position: relative;
+}
+
+.logo_contact{
+    width: 150px;
+    margin: 7px 30px;
+    padding: 5px;
+    border:#ecbd0b 1px solid ;
+    border-radius: 16px;
+    background-color: #323c4c;
+}
+
+.formulario{
+    margin: 10px;
+    padding: 10px;
+}
+.modal:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal_close{
+    position:absolute;
+    right: 15px;
+    top: 10px;
+    color: #323c4c;
+    text-decoration: none;
+}
+
+.separador{
+    border-top:#ecbd0b solid 2px;
+    margin-top: 20px;
+
+}
+
+.params_input input textarea{
+    border-color: #ecbd0b;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+}
+
+
+/* ------------------------FOOTER REDES + LOGO-------------------------------- */
+
+.footerChris{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 1440px;
+    background-color: #323c4c;
+}
+
+.footer-bottom{
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    width: auto;
+    height:200px;
+}
+
+.container_foot1{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 97px;
+    padding: 20px 20px 20px 80px ;
+
+}
+.logo_footer{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 120px;
+    margin-top: 20px;
+}
+.redes_ico{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: #ecbd0b 1px solid;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
+.redes_ico img{
+    width: 40px;
+    border: none;
+    margin:0 5px;
+}
+
+.tasse_cafe img{
+    width: 300px;
+    border: none;
+    margin:0 30px;
+}
+/* -------------------FOOTER MAPA-------------------------- */
+.container_foot2{
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+}
+
+.local_gif{
+    width: 100px;
+    border: none;
+    margin-top: 70px;
+    padding: 0 0 0 10px;
+
+}
+
+
+.eiffel_img{
+    margin-top: 20px;  
+}

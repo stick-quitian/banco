@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 113.39 113.39" style="enable-background:new 0 0 113.39 113.39;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#333333;}
+	.st1{fill:#ECBD0B;stroke:#000000;stroke-width:0.5385;stroke-miterlimit:10;}
+	.st2{font-family:'BerlinBold';}
+	.st3{font-size:24.082px;}
+	.st4{fill:#ECBD0B;}
+	.st5{fill:none;}
+	.st6{fill:#FFFFFF;}
+	.st7{fill:#B18E08;}
+</style>
+<g>
+	<rect x="8.26" y="8.26" class="st0" width="96.86" height="96.86"/>
+	<g>
+		<text transform="matrix(1.819356e-03 -0.9422 1 4.811922e-04 33.7446 94.9008)" class="st1 st2 st3">Bit-bank</text>
+		<g>
+			<rect x="37.56" y="17.79" class="st4" width="26.05" height="76.9"/>
+			<ellipse class="st4" cx="63.6" cy="36.11" rx="19.43" ry="18.32"/>
+			<ellipse class="st4" cx="75" cy="71.22" rx="24.89" ry="23.47"/>
+			<rect x="50.58" y="75.36" class="st4" width="26.05" height="19.33"/>
+		</g>
+		<rect x="43.21" y="13.09" class="st4" width="6.89" height="6.03"/>
+		<rect x="43.21" y="92.67" class="st4" width="7.37" height="6.03"/>
+		<rect x="56.48" y="13.09" class="st4" width="7.13" height="6.03"/>
+		<rect x="56.48" y="92.51" class="st4" width="7.13" height="6.03"/>
+		<polygon class="st5" points="35.16,94.22 34.16,94.22 34.8,17.89 35.81,17.89 		"/>
+		<polygon class="st4" points="15.98,94.69 14.97,94.69 15.36,17.8 16.29,17.79 		"/>
+		<polygon class="st4" points="36.45,94.83 35.44,94.84 35.17,17.9 36.18,17.89 		"/>
+		<g>
+			<polygon class="st6" points="49.87,91.73 41.52,91.73 41.52,47.28 49.87,42.64 			"/>
+			<polygon class="st6" points="63.77,91.73 55.41,91.73 55.41,38.73 63.77,33.2 			"/>
+			<polygon class="st7" points="63.77,91.73 72.56,91.73 72.56,38.73 63.77,33.2 			"/>
+			<polygon class="st7" points="49.59,91.73 58.38,91.73 58.38,47.28 49.59,42.64 			"/>
+		</g>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,414 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
+}
+
+/* ---------------------NAVBAR---------------------- */
+.navbar_madre, .container_block, .container_doc, .footer, .footer-top, .footer-bottom,.container_foot1, .container_foot2{
+    display: grid;
+}
+
+.navbar_hija1, .navbar_hija2, .elemetos_navbar, .btn_navbar,.texto_navbar2, .modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+}
+
+.ico_gif{
+    width: 50px;
+}
+
+.logo_nav{
+    width: 68px;
+    border: #ecbd0b 1px solid;
+    border-radius: 6px;
+    background-color: #323c4c;
+    padding: 5px;
+    margin: 3px 20px 0 2%;
+}
+
+.navbar_madre{
+    background-color: #ffffff;
+    width: 100%;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    position: fixed;
+    overflow-x: hidden;
+    z-index: 1;
+    margin-top: -60px;
+}
+
+/* navbar hija 1 */
+.navbar_hija1{
+    justify-content: left;
+    padding: 5px;
+}
+
+.elementos_navbar{
+    margin: 0 20px 0 0;
+
+}
+.ico_gif{
+    margin: 0 0 0 40px;
+}
+
+.texto_navbar{
+    color: #ecbd0b;
+    font-size: 20px;
+}
+
+/* navbar hija2 */
+.btn_navbar{
+    margin-left: 20px;
+}
+.btn_navbar a   {
+    background-color: none;
+    color: #ecbd0b;
+}
+.ico_ingresar{
+    width: 25px;
+    margin: 0 10px;
+
+}
+.texto_navbar2{
+    color: #ecbd0b;
+    margin: 0 30px;
+}
+
+.texto_navbar3{
+    color: #ece80b;
+    font-weight: bold;
+    margin: 0 0 20px 0 ;
+}
+
+.btn_navbar{
+    width: 160px;
+    height: 50px;
+    background-color: #ec101a;
+    color:beige;
+    border: 1px solid;
+    border-color: #ecbd0b;
+    border-radius: 7px;
+    font-size: 20px;
+}
+/* ----------------------BANNER------------------------------------------ */
+.contener_slideshow
+{
+    width:1440px;
+    height:320px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 60px;
+    
+    
+}
+.slid_1, .slid_2, .slid_3
+{
+    position: absolute;
+    width:1440px;
+    height:320px;
+    object-fit:contain;
+    
+}
+.slid_1{left: 0;}
+.slid_2{left: 1440px;}
+.slid_3{left: 2880px;}
+.contener_slide
+{
+    width: 1440px;
+    height: 320px;
+    left:0px;
+    margin-top: 20px;
+    position: absolute;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-name: anim_slide;
+    -moz-animation-duration: 15s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-name: anim_slide;
+    -ms-animation-duration: 15s;
+    -ms-animation-iteration-count:infinite;
+    -ms-animation-name: anim_slide;
+    animation-duration: 15s;
+    animation-iteration-count:infinite;
+    animation-name: anim_slide;
+}
+@-webkit-keyframes anim_slide 
+{
+    0% {left:0px;}
+    22% {left:0px;}
+    33% {left:-1440px;}
+    45% {left:-1440px;}
+    66% {left:-2880px;}
+    90% {left:-2880px;}
+}
+@-moz-keyframes anim_slide 
+{
+    0% {left:0px;}
+    22% {left:0px;}
+    33% {left:-1440px;}
+    45% {left:-1440px;}
+    66% {left:-2880px;}
+    90% {left:-2880px;}
+}
+@-ms-keyframes anim_slide 
+{
+    0% {left:0px;}
+    22% {left:0px;}
+    33% {left:-1440px;}
+    45% {left:-1440px;}
+    66% {left:-2880px;}
+    90% {left:-2880px;}
+}
+@keyframes anim_slide 
+{
+    0% {left:0px;}
+    22% {left:0px;}
+    33% {left:-1440px;}
+    45% {left:-1440px;}
+    66% {left:-2880px;}
+    90% {left:-2880px;}
+
+}
+/* tablero de los valores de crypto moneda */
+
+.tablero_coin{
+    display: flex;
+    justify-content:last baseline;
+    align-content: center;
+    margin-left: 40px;
+    
+    /* margin-right: -40px; */
+}
+
+/* -------------------------BOCK INFOS + BLOCK IMAGE BITCOIN--------------------------------------- */
+.container_block{
+    grid-template-columns: 2fr 1fr;
+}
+
+/* -------------------------BOCK INFOS--------------------------------------- */
+.container_doc{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-column-gap: 35px;
+    grid-row-gap: 40px;
+    margin: 10px 20px 20px 20px ;
+}
+
+@media (max-width: 992px) {
+    .container_doc{
+    grid-template-columns: repeat(1,1fr);
+    }
+    .ventanas{
+        width: 200px 8;
+    }
+}
+
+.ventanas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    border: none;
+    border-radius: 16px;
+    text-align: justify;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px 0 rgb(0 0 0 / 15%)
+    
+}
+
+.ventanas img{
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+}
+.ventanas p{
+    color: #323c4c;
+    flex-wrap: wrap;
+    font-size: 14px;
+    padding: 20px 30px 20px;
+    margin-top: -30px;
+    margin-bottom: 30px;   
+}
+
+.ventanas h3{
+    color: #ecbd0b;
+    font-size: 20px;
+    text-align: center;
+    padding: 0 30px 20px;
+}
+/* ----------------BLOCK IMAGE BITCOIN---------------- */
+.container_img img{
+    width: 400px;
+    height:1200px;
+    margin-top: 10px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.container_img{
+    width: 500px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    margin-left: 30px;
+
+}
+
+.img_bitcoin{
+    width: 385px;
+    height: 1190px;
+}
+/* ------------------------FOOTER REDES + LOGO-------------------------------- */
+
+.footer{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    background-color: #323c4c;
+}
+
+.footer-bottom{
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    width: auto;
+    height:200px;
+}
+
+.container_foot1{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 97px;
+    padding: 20px 20px 20px 80px ;
+
+}
+.logo_footer{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 120px;
+    margin-top: 20px;
+}
+.redes_ico{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: #ecbd0b 1px solid;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+
+.redes_ico img{
+    width: 40px;
+    border: none;
+    margin:0 5px;
+}
+
+.tasse_cafe img{
+    width: 300px;
+    border: none;
+    margin:0 30px;
+}
+/* -------------------FOOTER MAPA-------------------------- */
+.container_foot2{
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+}
+
+.local_gif{
+    width: 100px;
+    border: none;
+    margin-top: 70px;
+    padding: 0 0 0 10px;
+
+}
+
+
+.eiffel_img{
+    margin-top: 20px;  
+}
+
+/* ---------------MODAL------------------------------ */
+a {
+    text-decoration: none;
+}
+
+.modal{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(77, 77, 77, .6);
+    position: fixed;
+
+}
+
+.modal_content{
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: 1fr 2fr;
+    background-color: #ffffff;
+    padding: 1.5em 2em;
+    width: 800px;
+    max-width: 80%;
+    border-radius: 16px;
+    border: 2px solid;
+    border-color: #ecbd0b;
+    position: relative;
+}
+
+.logo_contact{
+    width: 150px;
+    margin: 7px 30px;
+    padding: 5px;
+    border:#ecbd0b 1px solid ;
+    border-radius: 16px;
+    background-color: #323c4c;
+}
+
+.formulario{
+    margin: 10px;
+    padding: 10px;
+}
+.modal:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal_close{
+    position:absolute;
+    right: 15px;
+    top: 10px;
+    color: #323c4c;
+    text-decoration: none;
+}
+
+.separador{
+    border-top:#ecbd0b solid 2px;
+    margin-top: 20px;
+
+}
+
+.params_input input textarea{
+    border-color: #ecbd0b;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+}
